@@ -26,12 +26,10 @@ def isAnagram(s, t):
     for i in range(len(s)):
         countS[s[i]] = 1 + countS.get(s[i], 0)
         countT[t[i]] = 1 + countT.get(t[i], 0)
-        print(countS[s[i]])
-
     for j in countS:
         if countS[j] != countT.get(j, 0):
             return False
     return True
 
 
-isAnagram('asananannn', 'annanatnna')
+# print(isAnagram('asananannn', 'annanatnna'))
